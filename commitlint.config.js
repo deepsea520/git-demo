@@ -1,6 +1,6 @@
 /** @type {import('cz-git').UserConfig} */
 module.exports = {
-  // extends: ['@commitlint/config-conventional'],
+  extends: ['@commitlint/config-conventional'],
   rules: {
     'body-leading-blank': [2, 'always'],
     'footer-leading-blank': [1, 'always'],
@@ -10,7 +10,7 @@ module.exports = {
     'type-enum': [
       2,
       'always',
-      ['feat', 'fix', 'docs', 'style', 'refactor', 'perf', 'test', 'ci', 'init', 'build', 'revert', 'chore', 'release'],
+      ['feat', 'fix', 'docs', 'style', 'refactor', 'perf', 'test', 'ci', 'build', 'revert', 'chore', 'release'],
     ],
   },
   prompt: {
